@@ -4,8 +4,8 @@ def cambio():
     
     vuelto = recibido - gasto
     
-    pesos = float(vuelto)
-    centavos = float((vuelto - pesos) * 100)
+    pesos = int(vuelto)
+    centavos = int(round((vuelto - pesos) * 100))
 
     print("\nVuelto\n")
     print(f"Pesos:\n{pesos}")
